@@ -207,3 +207,22 @@ CharField사용을 추천드립니다
 manage.py shell_plus --notebook
 ```
 
+
+
+### Facebook OAuth직접 구현하기
+
+<https://developers.facebook.com/docs/facebook-login/manually-build-a-login-flow>
+
+
+
+### Customizing AuthenticationBackends
+
+- [공식문서](<https://docs.djangoproject.com/en/2.2/topics/auth/customizing/#authentication-backends>)
+- [settings.py의 설정내용](<https://docs.djangoproject.com/en/2.2/ref/settings/#std:setting-AUTHENTICATION_BACKENDS>)
+
+
+
+### Custom exception handler sample
+
+<https://github.com/LeeHanYeong/let-us-Go/blob/master/app/utils/drf/exceptions.py>
+
