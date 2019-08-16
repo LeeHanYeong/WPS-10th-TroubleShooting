@@ -1,5 +1,38 @@
 # WPS 10기 trouble-shooting
 
+## 추가 특강
+
+- DRF
+  - RESTful API란?
+    - URI가 자원의 상태를 표현함
+    - [참조링크](<https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html>)
+  - [DRF - Filtering](<https://www.django-rest-framework.org/api-guide/filtering/>)
+    - `get_queryset()`에서 직접 필터링하는 대신, `FilterSet`클래스가 필터링을 전담
+  - [DRF CamelCase](<https://github.com/vbabiy/djangorestframework-camel-case>)
+    - JSON은 JavaScript의 문법을 따르므로, Response되는 데이터 형식을 CamelCase로 바꾸어주는 라이브러리
+  - [DRF Writable Nested](<https://github.com/beda-software/drf-writable-nested>)
+    - [DRF공식문서](<https://www.django-rest-framework.org/api-guide/relations/#writable-nested-serializers>)에서는 Nested한 Serializer의 경우, create와 update메서드를 직접 정의해주어야 한다고 되어있음
+      create를 자동으로 지원해주는 Mixin과 Serializer를 제공
+  - [drf-yasg](<https://github.com/axnsan12/drf-yasg>)
+    - GenericView를 적절히 사용한 경우, 거의 자동화 된 문서를 생성해 줌
+- Django
+  - [django-modeladmin-reorder](<https://github.com/mishbahr/django-modeladmin-reorder>)
+    - Django admin에서 나오는 Model들을 원하는대로 그룹화하고, 재정렬 할 수 있도록 도와줌
+  - [Jinja2](<https://github.com/pallets/jinja>)
+    - [Django문서](<https://docs.djangoproject.com/en/2.2/topics/templates/#django.template.backends.jinja2.Jinja2>)
+  - [Celery](<https://docs.celeryproject.org/en/latest/django/first-steps-with-django.html>)
+    - 비동기 Task Queue
+    - [django-celery-beat](<https://github.com/celery/django-celery-beat>)
+      - Celery를 사용한 Periodic Task Scheduler
+- Docker, 배포
+  - [docker-compose](<https://docs.docker.com/compose/>)
+    - Nginx컨테이너와 Django컨테이너를 따로 동작시킬 수 있음
+  - 배포 스크립트 짜보기
+- 시간이 남으면
+  - 프론트가 우리 API를 어떻게 쓰는지 간단히 활용해보기
+
+
+
 ## Room-Reservation
 
 중개모델(Intermediate model)을 사용합니다
